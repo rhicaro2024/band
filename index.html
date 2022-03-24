@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- style sheet list -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+
+	<!-- favicon link -->
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- slicknav code -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- local js slicknav script file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+	<!-- slicknav script -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+	});
+	</script>
+
+	<title>Led Zeppelin Image Gallery</title>
+
+</head>
+
+<body>
+	<header class="clearfix">
+			<a href="index.html"><img id="logoimage" src="#" alt=""></a>
+			<h2>Led Zeppelin</h2>
+	</header>
+
+<!-- slicknav navtag -->
+	<nav id="mobilemenu"></nav>
+
+<main>
+	<h1>Image Gallery</h1>
+
+<!-- Photo Grid -->
+<div class="row"> 
+	<div class="column">
+	  <img src="images/download-1.jpg">
+	  <img src="images/download-2.jpg">
+	  <img src="images/download-3.jpg">
+	  <img src="images/download-4.jpg">
+	  <img src="images/download-5.jpg">
+	</div>
+	
+	<div class="column">
+	  <img src="images/download-6.jpg">
+	  <img src="images/download-7.jpg">
+	  <img src="images/download-8.jpg">
+	  <img src="images/download-9.jpg">
+	  <img src="images/download-10.jpg">
+	</div> 
+	 
+	<div class="column">
+	  <img src="images/download-11.jpg">
+	  <img src="images/download-12.jpg">
+	  <img src="images/download-13.jpg">
+	  <img src="images/download-14.jpg">
+	  <img src="images/download-15.jpg">
+	</div>
+	
+	<div class="column">
+	  <img src="images/download-16.jpg">
+	  <img src="images/download-17.jpg">
+	  <img src="images/download-18.jpg">
+	  <img src="images/download-19.jpg">
+	  <img src="images/download-20.jpg">
+	</div>
+  </div>
+</main>
+<!-- Javascript - Get Current Year for the Footer -->
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Raphael Hicaro Productions</p>
+	</footer>
+</body>
+</html>
